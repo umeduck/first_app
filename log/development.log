@@ -1,0 +1,891 @@
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE DATABASE `first_app_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `first_app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2022-06-20 14:05:30 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 486)
+Completed 200 OK in 20ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4412)
+
+
+Started GET "/posts" for ::1 at 2022-06-20 14:42:19 +0900
+  
+ActionController::RoutingError (uninitialized constant PostsController):
+  
+actionpack (6.0.5) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.5) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.5) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.5) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.5) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.5) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.3.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3.1) lib/rack/head.rb:12:in `call'
+actionpack (6.0.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.5) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2022-06-20 15:28:06 +0900
+Processing by PostsController#index as HTML
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+  
+ActionController::MissingExactTemplate (PostsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.5) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.5) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.5) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+actiontext (6.0.5) lib/action_text/rendering.rb:19:in `with_renderer'
+actiontext (6.0.5) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.0.5) lib/active_support/callbacks.rb:121:in `instance_exec'
+activesupport (6.0.5) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.5) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.5) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.5) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.5) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.5) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.5) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.5) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.5) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.5) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.5) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.5) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.5) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.5) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.3.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3.1) lib/rack/head.rb:12:in `call'
+actionpack (6.0.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.5) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2022-06-20 15:49:54 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 91)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/umemurasusumuakatsuki/projects/first_app/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 298e7c6ba76a9b3f7c1d
+Version: webpack 4.46.0
+Time: 1400ms
+Built at: 2022/06/20 15:49:57
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c148a3dac298397afe5f.js    124 KiB  application  [emitted] [immutable]  application
+js/application-c148a3dac298397afe5f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c148a3dac298397afe5f.js js/application-c148a3dac298397afe5f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3545ms (Views: 3543.8ms | ActiveRecord: 0.0ms | Allocations: 1700730)
+
+
+Started GET "/posts" for ::1 at 2022-06-20 15:53:54 +0900
+  
+SyntaxError (/Users/umemurasusumuakatsuki/projects/first_app/app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input
+app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input
+app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input
+Started GET "/posts" for ::1 at 2022-06-20 15:54:15 +0900
+  
+SyntaxError (/Users/umemurasusumuakatsuki/projects/first_app/app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input
+app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input
+app/controllers/posts_controller.rb:7: syntax error, unexpected end, expecting end-of-input
+Started GET "/posts" for ::1 at 2022-06-20 15:54:43 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 6163)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (51.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY)[0m
+  [1m[35m (23.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20220620073141)
+  [1m[35m (31.1ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `memo` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220620073141')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-06-20 07:42:47.455325', '2022-06-20 07:42:47.455325')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20220620073141)
+  [1m[35m (21.6ms)[0m  [1m[35mDROP TABLE `posts`[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (24.7ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20220620073141'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20220620073141)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (23.0ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `memo` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220620073141')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20220620073141)
+  [1m[35m (7.4ms)[0m  [1m[35mDROP TABLE `posts`[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20220620073141'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20220620073141)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (23.4ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220620073141')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('こんにちは', '2022-06-20 08:25:50.529641', '2022-06-20 08:25:50.529641')[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+Started GET "/posts" for ::1 at 2022-06-20 18:01:34 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 12.5ms | ActiveRecord: 3.0ms | Allocations: 9702)
+
+
+Started GET "/posts" for ::1 at 2022-06-20 18:02:14 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 6781)
+
+
+Started GET "/posts" for ::1 at 2022-06-20 18:03:13 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2507)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 4364)
+
+
+  
+ActionView::Template::Error (undefined method `contend' for #<Post:0x00007fd3aeba6e98>
+Did you mean?  content
+               content?
+               content=):
+    1: <h1>トップページ</h1>
+    2: 
+    3: <%= @post.contend%>
+    4: <%= @post.created_at%>
+  
+app/views/posts/index.html.erb:3
+Started GET "/posts" for ::1 at 2022-06-20 18:03:22 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 6799)
+
+
+Started GET "/posts" for ::1 at 2022-06-20 18:04:29 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 6623)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.8ms | Allocations: 8139)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fd3ee3ca9a0>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: 
+    3: <%= @posts.content%>
+    4: <%= @posts.created_at%>
+  
+app/views/posts/index.html.erb:3
+Started GET "/posts" for ::1 at 2022-06-20 18:04:30 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3906)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 4359)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fd3af935c30>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: 
+    3: <%= @posts.content%>
+    4: <%= @posts.created_at%>
+  
+app/views/posts/index.html.erb:3
+Started GET "/posts" for ::1 at 2022-06-20 18:06:36 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3135)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 4329)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fd3aef929f8>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: <% @posts.each do |post|%>
+    3: <%= @posts.content%>
+    4: <%= @posts.created_at%>
+    5: <%end%>
+  
+app/views/posts/index.html.erb:3
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2022-06-20 18:06:37 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2994)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3446)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fd3aee7fc28>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: <% @posts.each do |post|%>
+    3: <%= @posts.content%>
+    4: <%= @posts.created_at%>
+    5: <%end%>
+  
+app/views/posts/index.html.erb:3
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2022-06-20 18:07:51 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2129)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 3318)
+
+
+  
+ActionView::Template::Error (undefined method `content' for nil:NilClass):
+    1: <h1>トップページ</h1>
+    2: <% @posts.each do |post|%>
+    3: <%= @post.content%>
+    4: <%= @post.created_at%>
+    5: <% end %>
+  
+app/views/posts/index.html.erb:3
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2022-06-20 18:08:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 847)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 6934)
+
+
+Started GET "/posts" for ::1 at 2022-06-20 18:14:42 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 867)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.5ms | Allocations: 16568)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-20 21:08:19 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6900)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-25 13:48:50 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 949)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 7652)
+
+
+Started POST "/posts" for ::1 at 2022-06-25 13:48:54 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"WbZ+eLVjWjo5SxmxMSC99RJ+APdXRRLri3urHcaRBlunzmZz+Q4mOkQSzmdKBx/A6VxTqaOdfqGoVNjZHUWYEQ==", "content"=>"こんにちは", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:8:in `create'
+  [1m[36mPost Create (19.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('こんにちは', '2022-06-25 04:48:54.760476', '2022-06-25 04:48:54.760476')[0m
+  ↳ app/controllers/posts_controller.rb:8:in `create'
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:8:in `create'
+  Rendering posts/create.html.erb within layouts/application
+  Rendered posts/create.html.erb within layouts/application (Duration: 0.4ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 4.3ms | ActiveRecord: 25.9ms | Allocations: 11764)
+
+
+Started GET "/posts" for ::1 at 2022-06-25 13:48:56 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (9.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 6.0ms | ActiveRecord: 9.0ms | Allocations: 9331)
+
+
+Started GET "/" for ::1 at 2022-06-25 14:30:35 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.3ms | Allocations: 189)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 907)
+
+
+Started GET "/" for ::1 at 2022-06-25 14:44:14 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 432)
+
+
+Started GET "/posts" for ::1 at 2022-06-25 14:44:19 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (12.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 730)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 15.2ms | ActiveRecord: 12.0ms | Allocations: 12514)
+
+
+Started GET "/posts.new" for ::1 at 2022-06-25 14:44:30 +0900
+Processing by PostsController#index as 
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 730)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 6785)
+
+
+Started GET "/posts_new" for ::1 at 2022-06-25 14:45:00 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/posts_new"):
+  
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts_new" for ::1 at 2022-06-25 14:45:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/posts_new"):
+  
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts_new" for ::1 at 2022-06-25 14:45:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/posts_new"):
+  
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts/new" for ::1 at 2022-06-25 14:46:59 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 795)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 6588)
+
+
+Started GET "/" for ::1 at 2022-07-04 11:20:17 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 313)
+Completed 200 OK in 20ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3197)
+
+
+Started GET "/" for ::1 at 2022-07-04 11:20:21 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.5ms | Allocations: 329)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 1328)
+
+
+Started GET "/posts" for ::1 at 2022-07-04 11:20:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3922)
+Started GET "/posts" for ::1 at 2022-07-04 11:20:24 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1373)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2288ms (Views: 2280.1ms | ActiveRecord: 5.9ms | Allocations: 2455326)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1664ms (Views: 1663.6ms | ActiveRecord: 0.4ms | Allocations: 1864429)
+
+
+Started GET "/posts" for ::1 at 2022-07-04 11:20:50 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 730)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.5ms | Allocations: 6711)
+
+
+Started GET "/" for ::1 at 2022-07-04 11:20:51 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 503)
+
+
+Started GET "/new" for ::1 at 2022-07-04 11:20:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-07-04 11:21:08 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-07-04 11:21:13 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/umemurasusumuakatsuki/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 502)
+
+
+Started GET "/posts" for ::1 at 2022-07-04 11:21:13 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.3ms | Allocations: 6757)
+
+
+Started GET "/posts/new" for ::1 at 2022-07-04 11:21:18 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 982)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 6993)
+
+
+Started GET "/posts/new" for ::1 at 2022-07-04 11:21:25 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 794)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 6661)
+
+
+Started GET "/posts/new" for ::1 at 2022-07-04 11:21:28 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 6674)
+
+
+Started GET "/posts/index" for ::1 at 2022-07-04 11:21:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/posts/index"):
+  
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts/create" for ::1 at 2022-07-04 11:21:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/posts/create"):
+  
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts/new" for ::1 at 2022-07-04 11:21:59 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 794)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6650)
+
+
+Started GET "/posts" for ::1 at 2022-07-04 11:22:00 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 6713)
+
+
+Started GET "/posts/new" for ::1 at 2022-07-04 12:44:57 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 794)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 6662)
+
+
